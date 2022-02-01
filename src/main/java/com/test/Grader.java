@@ -5,7 +5,7 @@ public class Grader {
     public String grade(int result) {
 
         if (result < 0 || result > 100) {
-            throw new IllegalArgumentException("Result should be a positive value");
+            throw new IllegalArgumentException("Result should be a non negative value & should not exceed 100");
         }
 
         if (result > 64 && result <= 74) {
